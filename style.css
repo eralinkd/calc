@@ -31,6 +31,11 @@ body{
 	border: 1px solid black;
 	padding: 10px;
 }
+@media (max-width:  700px) {
+	.main{
+	width: 80%;
+}
+ }
 .container{
 	border: 1px solid black;
 	background-color: rgb(170, 170, 170);
