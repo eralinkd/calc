@@ -17,6 +17,24 @@ let a = '';
 let b = '';
 let secondNum = 0;
 
+function randomInteger(min, max) {
+  // случайное число от min до (max+1)
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+}
+
+function randomColor() {
+    var c = "rgba(";
+    c += randomInteger(1, 255);
+    c += ', ';
+    c += randomInteger(1, 255);
+    c += ', ';
+    c += randomInteger(1, 255);
+    c += ', ';
+    c += '.5)';
+    return c;
+}
+
 for (let num of nums){
 	num.onclick = function(){
 		if (arithmeticsEntered === 0){
@@ -119,5 +137,5 @@ sqrt.onclick = function() {
 	a = text.textContent;
 }
 heart.onclick = function() {
-	heart.classList.toggle('active');
+	heart.style.backgroundColor = randomColor();
 }

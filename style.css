@@ -5,6 +5,13 @@
 html {
     -ms-overflow-style: none;  /* IE 10+ */
     scrollbar-width: none; /* Firefox */
+    -webkit-user-select: none;
+    /* user-select -- это нестандартное свойство */
+
+    -moz-user-select: none;
+    /* поэтому нужны префиксы */
+
+    -ms-user-select: none;
 }
 body{
 	background-color: rgb(220, 220, 220);
@@ -12,6 +19,7 @@ body{
 	font-family: 'comic-san', sans-serif;
 	font-weight: 700;
 	cursor: default;
+
 }
 .main{
 	background-color: rgb(80, 80, 80);
@@ -66,9 +74,6 @@ body{
 	background-color: rgb(140, 140, 140);
 }
 .but:active{
-	background-color: rgb(120, 120, 120);
-}
-.active{
 	background-color: rgb(120, 120, 120);
 }
 .heart{
