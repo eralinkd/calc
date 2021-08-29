@@ -71,6 +71,12 @@ body{
 .active{
 	background-color: rgb(120, 120, 120);
 }
+.heart{
+	background-image: url(heart.png);
+	background-size: 45%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 .keyboard{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
