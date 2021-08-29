@@ -68,6 +68,9 @@ body{
 .but:active{
 	background-color: rgb(120, 120, 120);
 }
+.active{
+	background-color: rgb(120, 120, 120);
+}
 .keyboard{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

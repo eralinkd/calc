@@ -2,6 +2,15 @@ let nums = document.querySelectorAll('.num');
 let text = document.querySelector('.text-cont');
 let arithmetics = document.querySelectorAll('.arithmetic');
 let equals = document.querySelector('.equals');
+let clear = document.querySelector('.clear');
+let cube = document.querySelector('.cube');
+let plusMinus = document.querySelector('.plus-minus');
+let square = document.querySelector('.square');
+let oneDivX = document.querySelector('.one-div-x');
+let xDivTen = document.querySelector('.x-div-10');
+let sqrt = document.querySelector('.sqrt');
+let heart = document.querySelector('.heart');
+
 let arithmeticsEntered = 0;
 let firstNum = 0;
 let a = '';
@@ -69,4 +78,46 @@ equals.onclick = function(){
 	firstNum = parseFloat(a);
 	b = '';
 	secondNum = 0;
+}
+
+clear.onclick = function(){
+	text.textContent = '0';
+	arithmeticsEntered = 0;
+	firstNum = 0;
+	a = '';
+	b = '';
+	secondNum = 0;
+}
+cube.onclick = function() {
+	firstNum = firstNum * firstNum * firstNum;
+	text.textContent = firstNum;
+	a = text.textContent;
+}
+square.onclick = function() {
+	firstNum = firstNum * firstNum;
+	text.textContent = firstNum;
+	a = text.textContent;
+}
+plusMinus.onclick = function() {
+	firstNum = -firstNum;
+	text.textContent = firstNum;
+	a = text.textContent;
+}
+oneDivX.onclick = function() {
+	firstNum = 1 / firstNum;
+	text.textContent = firstNum;
+	a = text.textContent;
+}
+xDivTen.onclick = function() {
+	firstNum = firstNum / 10;
+	text.textContent = firstNum;
+	a = text.textContent;
+}
+sqrt.onclick = function() {
+	firstNum = Math.sqrt(firstNum)
+	text.textContent = firstNum;
+	a = text.textContent;
+}
+heart.onclick = function() {
+	heart.classList.toggle('active');
 }
